@@ -1,0 +1,26 @@
+.Ping {
+  position: absolute;
+}
+
+.ping {
+  cursor: pointer;
+  transition: 0.2s;
+  height: 5vw;
+  max-height: 50px;
+  width: auto;
+}
+
+.ping:hover {
+  transform: scale(1.2) translateY(-10%);
+}
+
+.textbox {
+  position: absolute;
+  right: 100%;
+  bottom: 100%;
+  width: 30vw;
+  height: fit-content;
+  padding: 0.5rem;
+  background-color: aqua;
+  border-radius: 10px;
+}

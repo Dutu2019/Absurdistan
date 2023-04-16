@@ -2,6 +2,7 @@
   position: relative;
   height: 100%;
   width: fit-content;
+  --sidebar-width: 100px;
   background-color: var(--background-color);
   border-right: 3px solid rgba(0, 0, 0, 0.3);
   display: flex;
@@ -31,6 +32,6 @@
   user-select: none;
 }
 
-.section:hover {
+.section:hover, .active {
   background-color: greenyellow;
 }

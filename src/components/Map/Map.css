@@ -1,0 +1,8 @@
+@media (width <= 1300px) {
+}
+
+.Map {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
