@@ -1,14 +1,17 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Map from "./components/Map/Map";
+import Active from "./contexts/Active";
 
 function App() {
   return (
     <div className="App">
-      <div className="main">
+      <Active>
+        <div className="main">
           <Sidebar />
           <Map />
-      </div>
+        </div>
+      </Active>
     </div>
   );
 }

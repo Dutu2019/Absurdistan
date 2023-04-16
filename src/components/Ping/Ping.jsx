@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Ping.css";
 import ping from "../../img/ping.png";
+import { ActiveContext } from "../../contexts/Active";
 
 export default function Ping(props) {
+  const activeContext = useContext(ActiveContext);
   const [active, setActive] = useState(true);
   const style = { top: props.top, left: props.left };
 
   const handleClick = () => {
     setActive(!active);
-    console.log("yes");
+    console.log(activeContext);
   };
 
   return (
