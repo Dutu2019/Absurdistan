@@ -4,14 +4,12 @@ import ping from "../../img/ping.png";
 import { ActiveContext } from "../../contexts/Active";
 
 export default function Ping(props) {
+  const id = props.id;
   const activeContext = useContext(ActiveContext);
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(activeContext.id);
   const style = { top: props.top, left: props.left };
 
-  const handleClick = () => {
-    setActive(!active);
-    console.log(activeContext);
-  };
+  const handleClick = () => {};
 
   return (
     <div className="Ping" style={style} onClick={handleClick}>

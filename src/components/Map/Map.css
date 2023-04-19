@@ -1,6 +1,10 @@
 @media (width <= 1300px) {
 }
 
+#mapImg {
+  aspect-ratio: 9/6;
+}
+
 .Map {
   position: relative;
   width: 100%;
