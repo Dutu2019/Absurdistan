@@ -7,7 +7,7 @@ import { ActiveContext } from "../../contexts/Active";
 export default function Map() {
   const [positions, setPositions] = useState([]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const activeContext = useContext(ActiveContext)
+  const activeContext = useContext(ActiveContext);
 
   // Ping displacement temp fix
   useEffect(() => {
@@ -46,7 +46,7 @@ export default function Map() {
         "20%",
         "59.5%",
         "5%",
-        "58.5%"
+        "58.5%",
       ]);
     }
   }, [windowWidth]);
@@ -55,7 +55,10 @@ export default function Map() {
     <div className="Map">
       <img src={map} alt="World Map" id="mapImg" className="Img" />
       <Ping top={positions[0]} left={positions[1]} id="1">
-        Helo
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptas
+        alias nostrum dolore est. Accusantium excepturi nam doloremque aliquam
+        quis culpa quia debitis in? Veritatis fugit tempora quisquam reiciendis
+        delectus.
       </Ping>
       <Ping top={positions[2]} left={positions[3]} id="2">
         Helo

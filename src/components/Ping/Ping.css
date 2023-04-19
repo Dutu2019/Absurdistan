@@ -23,4 +23,5 @@
   padding: 0.5rem;
   background-color: aqua;
   border-radius: 10px;
+  z-index: 1000;
 }
