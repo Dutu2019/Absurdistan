@@ -1,0 +1,22 @@
+@keyframes leftFade {
+  0% {
+    opacity: 0%;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.Content {
+  margin-left: 220px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.intro {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  margin: 1rem;
+  animation: leftFade 1.5s;
+}

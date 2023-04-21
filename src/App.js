@@ -1,7 +1,7 @@
 import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar";
-import Map from "./components/Map/Map";
 import Active from "./contexts/Active";
+import Content from "./components/Content/Content";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Active>
         <div className="main">
           <Sidebar />
-          <Map />
+          <Content />
         </div>
       </Active>
     </div>
