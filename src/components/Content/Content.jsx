@@ -6,7 +6,6 @@ export default function Content() {
   return (
     <div className="Content">
       <div className="intro">
-        <div className="title">Introduction</div>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum unde eos
         laborum porro quas quam ratione ullam eligendi. Optio minus asperiores
         nulla ullam quasi nesciunt accusamus iure? Repudiandae, dignissimos

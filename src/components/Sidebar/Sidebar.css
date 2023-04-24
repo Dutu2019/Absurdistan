@@ -2,7 +2,6 @@
   position: fixed;
   height: 100%;
   width: fit-content;
-  background-color: var(--background-color);
   color: var(--text-color);
   border-right: 3px solid rgba(0, 0, 0, 0.3);
   display: flex;

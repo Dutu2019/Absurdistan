@@ -14,14 +14,32 @@ body {
 
 .App {
   position: relative;
-  height: 100vh;
 }
 
-.main {
+.container {
   position: relative;
   height: 100%;
   max-width: 100vw;
+}
+
+.main {
   display: flex;
+}
+
+.bgImg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+  background-image: url("./img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1000;
+
+  /* Filters */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 
 .Img {

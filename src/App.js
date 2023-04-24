@@ -7,9 +7,12 @@ function App() {
   return (
     <div className="App">
       <Active>
-        <div className="main">
-          <Sidebar />
-          <Content />
+        <div className="container">
+          <div className="bgImg"></div>
+          <div className="main">
+            <Sidebar />
+            <Content />
+          </div>
         </div>
       </Active>
     </div>
