@@ -4,18 +4,18 @@ import { ActiveContext } from "../../contexts/Active";
 
 export default function SideSection(props) {
   const id = props.id;
+  const sectionID = props.section
   const activeContext = useContext(ActiveContext);
   const handleClick = () => {
     activeContext.setActive(id);
   };
 
   const section = (
-    <div
-      className={`SideSection ${activeContext.active === id && "active"}`}
-      onClick={handleClick}
-    >
-      {props.children}
-    </div>
+    <a href={`#${sectionID}`} onClick={handleClick}>
+      <div className={`SideSection ${activeContext.active === id && "active"}`}>
+        {props.children}
+      </div>
+    </a>
   );
   return section;
 }

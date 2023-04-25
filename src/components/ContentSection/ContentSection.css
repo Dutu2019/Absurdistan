@@ -1,0 +1,6 @@
+.ContentSection {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  margin: 1rem;
+  animation: leftFade 1.5s;
+}

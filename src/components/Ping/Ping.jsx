@@ -28,7 +28,11 @@ export default function Ping(props) {
   return (
     <div className="Ping" style={style} onClick={handleClick}>
       <img src={ping} alt="" className="ping" />
-      {active && <div className="textbox">{props.children}</div>}
+      {active && (
+        <div className="textbox">
+          {props.children}
+        </div>
+      )}
     </div>
   );
 }
