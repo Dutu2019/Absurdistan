@@ -9,6 +9,10 @@ export default function Ping(props) {
   const [active, setActive] = useState(false);
   const style = { top: props.top, left: props.left };
 
+  // For the content
+  const title = props.title
+  const img = props.img
+
   useEffect(() => {
     if (activeContext.active === id) {
       setActive(true);
@@ -25,14 +29,17 @@ export default function Ping(props) {
     }
   };
 
+  const textbox = (
+    <div className="textbox">
+      <div className="title"></div>
+      {props.children}
+  </div>
+  );
+
   return (
     <div className="Ping" style={style} onClick={handleClick}>
       <img src={ping} alt="" className="ping" />
-      {active && (
-        <div className="textbox">
-          {props.children}
-        </div>
-      )}
+      {active && textbox}
     </div>
   );
 }
