@@ -10,8 +10,8 @@ export default function Ping(props) {
   const style = { top: props.top, left: props.left };
 
   // For the content
-  const title = props.title
-  const img = props.img
+  const title = props.title;
+  const img = props.img;
 
   useEffect(() => {
     if (activeContext.active === id) {
@@ -30,10 +30,17 @@ export default function Ping(props) {
   };
 
   const textbox = (
-    <div className="textbox">
-      <div className="title"></div>
-      {props.children}
-  </div>
+    <div className="container">
+      <div className="pingBg pingColor"></div>
+      <div
+        className="pingBg pingImg"
+        style={{ backgroundImage: `url(${img})`,  }}
+      ></div>
+      <div className="textbox">
+        <div className="title">{title}</div>
+        <div className="content">{props.children}</div>
+      </div>
+    </div>
   );
 
   return (
