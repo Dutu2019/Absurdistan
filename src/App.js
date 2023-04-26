@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Active>
         <div className="container">
+          <div className="bgColor"></div>
           <div className="bgImg"></div>
           <div className="main">
             <Sidebar />

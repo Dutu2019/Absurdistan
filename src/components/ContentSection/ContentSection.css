@@ -1,6 +1,23 @@
+@keyframes leftFade {
+  0% {
+    opacity: 0%;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media screen and (width < 1150px) {
+  .ContentSection {
+    max-width: 100% !important;
+  }
+}
+
 .ContentSection {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.3rem;
-  margin: 1rem;
+  max-width: 60%;
+  margin: 2rem;
   animation: leftFade 1.5s;
 }

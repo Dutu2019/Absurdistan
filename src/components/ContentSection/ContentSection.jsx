@@ -4,19 +4,19 @@ import { ActiveContext } from "../../contexts/Active";
 
 export default function ContentSection(props) {
   const activeContext = useContext(ActiveContext);
+  const sectionId = props.sectionId;
   const id = props.id;
-  const ref = useRef()
-  const isVisible = useIsVisible(ref)
+  const ref = useRef();
+  const isVisible = useIsVisible(ref);
 
   useEffect(() => {
     if (isVisible && !(id > 0 && id < 6)) {
-      activeContext.setActive(id)
-      console.log(id)
+      activeContext.setActive(id);
     }
-  }, [isVisible])
+  }, [isVisible]);
 
   return (
-    <div className="ContentSection" id={id} ref={ref}>
+    <div className="ContentSection" id={sectionId || id} ref={ref}>
       {props.children}
     </div>
   );
