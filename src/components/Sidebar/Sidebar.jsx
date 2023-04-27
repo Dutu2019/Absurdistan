@@ -11,10 +11,10 @@ export default function Sidebar() {
           Introduction
         </SideSection>
         <SideSection section="1" id="1">
-          Endroit 1
+          Musée national JSP
         </SideSection>
         <SideSection section="1" id="2">
-          Endroit 2
+          Water-polo hivernal
         </SideSection>
         <SideSection section="1" id="3">
           Eugene Ionesco
